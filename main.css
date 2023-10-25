@@ -1,0 +1,279 @@
+
+
+header {
+    display: flex;
+    height: 40px;
+    /* background-color: rgb(209, 231, 231); */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+header div:nth-child(2) {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: small;
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    width: 70vw;
+    margin-top: 20px;
+}
+
+#payment-procedures {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: 110vh;
+    /* background-color: aliceblue; */
+
+}
+
+.Fast-pay-opt {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(207, 206, 206);
+}
+
+.Fast-pay-opt h4 {
+    margin-top: 10px;
+}
+
+.Fast-pay-opt .logosbutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logosbutton div {
+    display: flex;
+    width: 220px;
+    height: 30px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 8px;
+    padding: 5px;
+    font-size: small;
+    align-items: center;
+}
+
+.logosbutton div:nth-child(2) {
+    background-color: #FFD060;
+}
+
+.logosbutton .g-pay {
+    background-color: black;
+    color: #ffff;
+}
+
+
+.g-pay img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.paypal img {
+    width: 45px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 10px;
+}
+
+.email-label-and-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.country-label, .email-label-and-login, .card-details {
+    margin-top: 10px;
+}
+
+.contact input,  .contact select, .Company-Info input{
+    border-radius: 8px;
+    height: 30px;
+    border: none;
+    border: 1px solid rgb(207, 206, 206);
+    padding: 0 10px;
+    
+}
+
+.company-option {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.Company-Info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 10px;
+}
+
+.vat-id-label, .comapny-name-label {
+    margin-top: 10px;
+}
+
+.Company-Info input::placeholder, .Company-Info label span{
+    font-style: italic;
+}
+
+.payment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 15px;
+    border-top: 1px solid rgb(207, 206, 206);
+    padding-top: 20px;
+
+}
+
+.Card-Or-Transfer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Card-Or-Transfer div {
+    display: flex;
+    width: 220px;
+    height: 30px;
+    justify-content: flex-start;
+    background-color: rgb(255, 255, 255); 
+    border: 1px solid rgb(207, 206, 206);
+    border-radius: 8px;
+    padding: 5px;
+    font-size: small;
+    align-items: center;
+    gap: 5px;
+}
+
+.Card-Or-Transfer div p {
+    flex-grow: 1;
+}
+
+.Card-Or-Transfer div img, .card-number-container img{
+    width: 25px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-number-container, .Card-sensitive div input , .card-name input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(207, 206, 206);
+    padding: 0 10px;
+    border-radius: 8px;
+    height: 30px;
+    
+}
+
+.card-number-container input{
+    border: none;
+    background-color:#ffff;
+    outline: none;
+    width: 80%;
+    padding: 0;
+}
+
+input::placeholder {
+    font-size: smaller;
+}
+
+input[type="text"]:focus,  input[type="password"]:focus{
+    outline: 1px solid rgb(207, 206, 206);
+}
+
+.card-number-container input:focus {
+    outline: none;
+}
+
+.Card-sensitive {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Card-sensitive div, .card-name{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Card-sensitive div input {
+    width: 220px;
+}
+
+
+/* STYLES FOR THE PAYMENT SUMMARY ON THE RIGHT */
+
+#payment-summary {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: 75vh;
+    border-radius: 8px;
+    background-color: #eceaea;
+    padding: 24px 32px;
+}
+
+.main-img {
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.product1, .product2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.product1-price, .product2-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD060;
+    gap: 3px;
+    flex-grow: 1;
+
+}
+
+/* .product1-price div, .product2-price div {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0%;
+} */
+
+
+
+
+
+
+

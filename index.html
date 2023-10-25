@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PayOut</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <div class="Logo"><h3>Your Logo</h3></div>
+            <div><p>Back to Shopping</p></div>
+        </header>
+        <main>
+            <section id="payment-procedures">
+                <div class="Fast-pay-opt">
+                    <h4> Faster Payments? Try express checkout </h4>
+                    <div class="logosbutton">
+                        <div class="g-pay">
+                            <img class="g-pay-img" src="googlePay.svg" alt="G-Pay logo">
+                            <p>Pay</p>
+                        </div>
+                        <div class="paypal">
+                            <img class="paypal-img" src="payPay.svg" alt="PayPal logo">
+                        </div>
+                    </div>
+                </div>
+                <form class="contact" action="#" method="post">
+                    <h4> Contact Information </h4>
+                    <div class="email-label-and-login">
+                        <label for="email" class="email-label">Email</label>
+                        <p>Already have an account? Login</p>
+                    </div>
+                    <input id="email" type="text" name="email" placeholder="e.g user_email@gmail.com">
+                    <label for="country" class="country-label">Country</label>
+                    <select id="country" class="country">
+                        <option value="default"> Select your country</option>
+                        <option value="Nigeria"> Nigeria </option>
+                        <option value="USA"> USA </option>
+                        <option value="Romania"> Romania </option>
+                        <option value="UK"> UK </option>
+                        <option value="Ghana"> Ghana </option>
+                        <option value="Austria"> Austria </option>
+                        <option value="Sweden"> Sweden </option>
+                    </select>
+                </form>
+                    <div class="company-option">
+                     <input type="checkbox" class="checkbox" name="company">
+                     <p>Check if you want to purchase as a company</p>
+                    </div>
+                    <form class="Company-Info" action="#" method="post">
+                        <label class="company-name-label" for="company-name"> Company name</label>
+                        <input id="company-name" type="text" name="company-name" placeholder="SC Company Name S.RL">
+                        <label class="vat-id-label" for="vat-id"> VAT ID <span>(only for european countries)</span></label>
+                        <input id="vat-id" type="text" name="vat-id" placeholder="e.g Romania code: ROXXXXXXX">
+                    </form>
+                    <form class="payment-section">
+                        <h4> Pay with</h4>
+                        <div class="Card-Or-Transfer">
+                            <div class="card" >
+                                <img src="Credit-Card.svg" alt="Debit-card-Icon">
+                                <p> Card </p>
+                                <input class="card" type="radio" name="card">
+                            </div>
+                            <div class="Transfer" >
+                                <img src="wire-transfer 1.svg" alt="Transfer-Icon">
+                                <p> Bank transfer </p>
+                                <input class="card" type="radio" name="card">
+                            </div>
+                        </div>
+                        <div class="card-details">
+                          <label class="card-number-label" for="card-number"> Card number</label>
+                          <div class="card-number-container">
+                                <input id="card-number" type="text" name="card-number" placeholder="4112 - 18111- 7761 5544">
+                                <img src="visaIcon.svg" alt="visa-card-icon">
+                          </div>
+                        </div>
+                        <div class="Card-sensitive">
+                            <div class="expiry-date" >
+                                <label for="expiry-date">Expiry date</label>
+                                <input class="expiry-date" type="text" name="expiry-date" placeholder="MM/YY">
+                            </div>
+                            <div class="cvc-code" >
+                                <label for="cvc-code"> CVC code </label>
+                                <input class="cvc-code" type="password" name="cvc-code" placeholder="CVC code">
+                            </div>
+                        </div>
+                        <div class="card-name">
+                            <label class="card-name" for="card-name"> Name on card</label>
+                            <input id="card-name" type="text" name="card-name" placeholder="As it appears on the front of your card">
+                      </div>   
+                    </form>
+            </section>
+            <section id="payment-summary">
+                <h4> Cart Summary (2)</h4>
+                <div class="product1">
+                    <img class="main-img" src="milkShake.jpg" alt="product1-img">
+                    <div class="product1-price">
+                        <div class="product1-title">
+                            <p>Product title goes here</p>
+                            <p>$120</p>
+                        </div>
+                        <div class="product1-bin">
+                            <p>Design file.</p>
+                            <img src="Trash-Delete.svg" alt="bin-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="product2">
+                    <img class="main-img" src="milkShake.jpg" alt="product2-img">
+                    <div class="product2-price">
+                        <div class="product2-title">
+                            <p>Another product here with longer title</p>
+                            <p>$32</p>
+                        </div>
+                        <div class="product2-bin">
+                            <p>Design file.</p>
+                            <img src="Trash-Delete.svg" alt="bin-icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="cart">
+                    <p>Cart title.</p>
+                    <p>$152</p>
+                </div>
+                <div class="vAT">
+                    <p>VAT(19%)</p>
+                    <p>$11.97</p>
+                </div>
+                <div class="Total">
+                    <p>Total to pay</p>
+                    <p>$163.97</p>
+                </div>
+                <button> Place order - $163.97</button>
+                <p>By signing up or placing an order you are consenting to our <span>privacy policy</span></p>
+                <div>
+                    <img src="DSS.svg" alt="DSS-logo">
+                    <img src="norton-antivirus-logo 1.svg" alt="Norton-logo">
+                </div>
+
+            </section>
+        </main>
+    
+     <script src="script.js"></script>
+    </body>
+    </html>
